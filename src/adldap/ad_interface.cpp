@@ -133,7 +133,7 @@ AdInterface::AdInterface(AdConfig *adconfig) {
         }();
 
         if (!dc.isEmpty()) {
-            const QString out = "ldap://" + dc;
+            const QString out = "ldap://" + dc + ":3268";
             return out;
         } else {
             return QString();
